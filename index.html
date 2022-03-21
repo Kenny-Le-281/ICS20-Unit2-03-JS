@@ -1,20 +1,56 @@
 <!DOCTYPE html>
-<!-- ICS20-UnitX-YY-HTML-->
+<!-- ICS20-Unit2-03-JS-->
 <html lang="en-ca">
   <head>
     <meta charset="utf-8"
-    <meta name="description" content="XXX">
+    <meta name="description" content="User Input, with JavaScript">
     <meta name="keywords" content="mths, ics2o">
     <meta name="author" content="Kenny Le">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <title>XXX</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>User Input, with a JS</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class = "mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class = "mdl-layout__header">
+        <div class = "mdl-layout__header-row">      
+          <span class = "mdl-layout-title">Hello, World!, with JS</span>          
+        </div>       
+      </header>
+      <main class = "mdl-layout__content">
+        <h3>Please enter the following:</h3>
+        <br>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="street-number">
+            <label class="mdl-textfield__label" for="street-number">Street Number</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Simple Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="street-name">
+            <label class="mdl-textfield__label" for="street-name">Street Name</label>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="myButtonClicked()">
+          Enter!
+        </button>
+        <!-- basic text -->
+        <br>
+        <br>
+        <div id="hello-world"></div>
+      </main>
+    </div>
   </body>
 </html>
