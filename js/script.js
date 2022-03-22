@@ -6,12 +6,12 @@
 /**
  * This function gets users street number and name and shows it back to user.
  */
-function myButtonClicked() {
+function enterClicked() {
   // input
-  const street-number = parseInt(document.getElementById("street-number").value)
-  const street-name = document.getElementById("street-name").value
+  const streetName = document.getElementById("street-name").value
+  const streetNumber = parseInt(document.getElementById("street-number").value)
   
   // output
-  document.getElementById
-  
+  document.getElementById("address").innerHTML =
+    "<p>Your adress is: " + streetNumber + " " + streetName + ".</p>"
 }
