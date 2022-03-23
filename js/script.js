@@ -4,7 +4,7 @@
 */
 
 /**
- * This function gets users street number and name and shows it back to user.
+ * This function gets the users street number and name and shows it back to the user.
  */
 function enterClicked() {
   // input
